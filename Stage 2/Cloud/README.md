@@ -1,5 +1,5 @@
 # Introduction to Cloud Computing on AWS for Beginners Course Code
-*By [Digital Cloud Training](https://digitalcloud.training/) - Course Author Neal Davis*
+
 
 ## How to Use the Course Code
 
@@ -26,4 +26,4 @@ The code used throughout the course has been zipped up and is available for down
 - Create event-driven architectures with serverless on Lambda
 - Create loosely coupled services with Amazon SQS and Amazon SNS
 
-Learn more and [enroll in this course](https://digitalcloud.training/cloud-computing-on-aws-for-beginners/) now to get started learning Amazon Web Services
+
