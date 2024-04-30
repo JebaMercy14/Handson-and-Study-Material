@@ -1,0 +1,73 @@
+Here are some of the most commonly used annotations in Spring Boot:
+
+1. `@SpringBootApplication`: This is a convenience annotation that adds all of the following:
+   - `@Configuration`: Tags the class as a source of bean definitions for the application context.
+   - `@EnableAutoConfiguration`: Tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings.
+   - `@ComponentScan`: Tells Spring to look for other components, configurations, and services in the specified package¹.
+
+2. `@RestController`: This is a specialized version of the controller. It includes the `@Controller` and `@ResponseBody` annotations and means that the class is a Controller¹.
+
+3. `@RequestMapping`: Annotation for mapping web requests onto methods in request-handling classes with flexible method signatures¹.
+
+4. `@GetMapping`, `@PostMapping`, `@PutMapping`, `@DeleteMapping`: These are shortcut annotations for `@RequestMapping` method with `RequestMethod.GET`, `POST`, `PUT`, `DELETE` respectively¹.
+
+5. `@PathVariable`: Indicates that a method parameter should be bound to a URI template variable¹.
+
+6. `@RequestParam`: Indicates that a method parameter should be bound to a web request parameter¹.
+
+7. `@RequestBody`: Indicates a method parameter should be bound to the body of the web request¹.
+
+8. `@Autowired`: This annotation is used to auto-wire spring bean on setter methods, constructor, a property or methods with arbitrary names and/or multiple arguments¹.
+
+9. `@Service`: Indicates that an annotated class is a "Service" (e.g. a business service facade)¹.
+
+10. `@Repository`: Indicates that an annotated class is a "Repository", originally defined by Domain-Driven Design (Evans, 2003) as "a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects"¹.
+
+11. `@Component`: Indicates that an annotated class is a "component". Such classes are considered as candidates for auto-detection when using annotation-based configuration and classpath scanning¹.
+
+12. `@Bean`: Indicates that a method produces a bean to be managed by the Spring container¹.
+
+13. `@ConfigurationProperties`: Annotation for externalized configuration¹.
+
+14. `@EnableConfigurationProperties`: Enable support for `@ConfigurationProperties`¹.
+
+15. `@Value`: Annotation at the field or method/constructor parameter level that indicates a default value expression for the affected argument¹.
+
+16. `@Profile`: Indicates that a component is eligible for registration when one or more specified profiles are active¹.
+
+17. `@PropertySource`: Annotation providing a convenient and declarative mechanism for adding a PropertySource to Spring's Environment¹.
+
+18. `@Import`: Indicates one or more component classes to import — typically @Configuration classes¹.
+
+19. `@ImportResource`: Indicates one or more resources containing bean definitions to import¹.
+
+20. `@Controller`: Indicates that an annotated class is a "Controller" (e.g. a web controller)¹.
+
+21. `@ControllerAdvice`: A specialization of `@Component` for classes that declare `@ExceptionHandler`, `@InitBinder`, or `@ModelAttribute` methods to be shared across multiple `@Controller` classes¹.
+
+22. `@ExceptionHandler`: Annotation for handling exceptions in specific handler classes and/or handler methods¹.
+
+23. `@ResponseBody`: Annotation that indicates a method return value should be bound to the web response body¹.
+
+24. `@Qualifier`: This annotation is used along with `@Autowired` annotation to avoid confusion when multiple instances of bean type is present¹.
+
+25. `@Scope`: This annotation is used to specify the scope of the beans¹.
+
+26. `@Lazy`: This annotation is used at class level as well as method level to indicate that a bean is to be lazily initialized¹.
+
+27. `@Primary`: This annotation is used when we have more than one bean of the same type and we want to give preference to one of them to be used for autowiring¹.
+
+28. `@Order`: Annotation that defines sorting priority for annotated components¹.
+
+29. `@Async`: Indicates that the annotated method must be invoked in a separate thread¹.
+
+30. `@Scheduled`: Annotation that marks a method to be scheduled¹.
+
+These annotations are widely used in Spring Boot applications and can help streamline your development process¹.
+
+Source: 
+(1) Top 10 Spring Boot Annotations You Need to Know in 2024 - Bacancy. https://www.bacancytechnology.com/blog/spring-boot-annotations.
+(2) Demystifying Annotations in Spring Boot: A Comprehensive Guide. https://medium.com/@himashasilva/demystifying-annotations-in-spring-boot-a-comprehensive-guide-82a7e58479d5.
+(3) The Complete List of Spring Boot Annotations You Must Know. https://lightrun.com/the-complete-list-of-spring-boot-annotations-you-must-know/.
+(4) Ultimate Guide to Spring Boot Annotations - Become Geeks. https://becomegeeks.com/blog/ultimate-guide-to-spring-boot-annotations/.
+(5) Spring Boot Annotations List Everyone Should Know About - Careers360. https://www.careers360.com/courses-certifications/articles/spring-boot-annotations.
